@@ -1,0 +1,117 @@
+
+.credit-card{
+
+    color:grey;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+}
+
+.credit-card .front,
+.credit-card .back {
+    border-radius: .5rem;
+    width: 450px;
+    height: 250px;
+    padding: 35px 35px;
+}
+
+.credit-card .front{
+    background-color: rgb(234, 232, 232);
+    border:1px solid rgb(138, 132, 132);
+    position:relative;
+    z-index: 1;
+}
+
+
+.name-group input, .number-group input{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1.5px solid rgb(164, 160, 160, 0.7);
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+legend{
+
+    font-size: 12px;
+    color:rgb(80, 76, 76);
+    padding: 20px 0px 20px 0px;
+}
+
+.container p{
+    display: inline-block;
+	vertical-align: middle;
+    font-size: 30px;
+    margin:15px;
+    
+}
+
+
+.expiration-group{
+    display:flex;   
+}
+
+.expiration-group input{
+    width:23%;
+    padding: 13px 15px;
+    border: 1.5px solid rgb(164, 160, 160,0.7);
+    margin: 8px 0;
+ }
+
+
+.expiration-group label:last-child{
+    width:10%;
+}
+
+.expiration-group .logo {
+    width:23%;
+}
+ 
+
+.credit-card .back{
+    position: absolute;
+    background-color: rgb(219, 213, 213);
+    top:2rem;
+    left:9rem;
+}
+
+.credit-card  .back .stripe{
+    background-color: rgb(120, 116, 116);
+    height: 60px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+} 
+
+.credit-card .back .cvc-group {
+    position:absolute;
+    top: 10rem;
+    right: 1.5rem;
+}
+
+.credit-card .cvc-group input{
+    width:80px;
+    height:45px;
+    border: 1.5px solid rgb(164, 160, 160, 0.7); 
+    padding-left: 8px;
+}
+
+.footer{
+   position:absolute;
+   top:23rem;
+   left:15rem;
+}
+
+.footer input{
+    background-color: rgb(137, 113, 113);
+    color:white;
+    border:none;
+    height:40px;
+    width:10rem;
+    border-radius: 6px;
+ }
+ 
+ .form-group input:focus{
+    border-color: #fdde60;
+    outline:none;
+ }

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>credit card form</title>
+</head>
+<body>
+    <form class="credit-card">
+     <div class="front">
+        <div class="form-group name-group">
+            <label for="Holder of card"></label>
+            <input type="text" id="Holder of card" placeholder="Holder of card" required>
+        </div>
+        <div class="form-group number-group">
+            <label for="Number of card"></label>
+            <input type="tel" id="Number of card" maxlength="16" placeholder="Number of card" required>
+        </div>
+        <legend>VALID THRU</legend>
+        <div class="form-group expiration-group">  
+            <label for="Month"></label>
+            <input type="tel" maxlength="2" id="Month" placeholder="MM" required>
+            <div class="container">
+                <p>/</p>
+            </div>
+            <label for="Year"></label>
+            <input type="tel"  maxlength="2" id="Year" placeholder="YY" required>
+            <img src="img/mastercard.svg" class="logo" alt="">
+            <img src="img/visa.svg" class="logo" alt="">
+        </div>
+        
+     </div>
+    </div>
+    <div class="back">
+     <div class="stripe"></div>
+     <div class="form-group cvc-group">
+        <label for="CVC"></label>
+        <input type="tel"  maxlength="3" id="CVC" placeholder="CVC" required>
+    </div> 
+    </div>
+    <div class="footer">
+    <label for="send"></label>
+    <input type="submit"value="Send">
+    </div>
+</body>
+</html>
